@@ -1,0 +1,39 @@
+.letter-card {
+  display: inline-block;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: xx-large;
+  border: 10px solid transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  background: linear-gradient(180deg, #b506dc, #b506dc, #7c0bb0, #6005c1);
+}
+
+#wordImage {
+  width: 270px; /* Adjust the size as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+.selectedletter {
+  font-size: xx-large;
+  font-weight: 500;
+  height: 100px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.resetButton {
+  position: absolute;
+  bottom: 5%;
+  left: 43%;
+  width: 200px;
+  height: 50px;
+}

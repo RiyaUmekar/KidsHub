@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color: blue;
+}
+
+body {
+  /* font family */
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  height: 100svh;
+}
+.bg_shape {
+  height: 100svh;
+  background: linear-gradient(90deg, #b506dc, #b506dc, #7c0bb0, #6005c1);
+  clip-path: circle(75% at 100% 99%);
+}
+.title {
+  position: absolute;
+  width: 40%;
+  display: block;
+  font-size: 25px;
+  padding: 100px;
+  color: #ad06ea;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+.title p {
+  margin-top: 25px;
+  color: #b506dc;
+}
+.selecter_age {
+  width: 100%;
+  height: 100%;
+}
+
+.age {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  border-radius: 50%;
+  margin-left: 700px;
+  margin-top: 40px;
+
+  text-align: center;
+  align-items: center;
+  justify-content: flex;
+}
+.age:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.baby,
+.young,
+.middel {
+  padding: 0px 0px 0px 30px;
+  font-style: oblique;
+}
+/* .gif{
+    background-image: url("media/cartoon_of_firstPage.gif");
+    height: 40px;
+    width: 40px;
+} */
+.hii {
+  position: absolute;
+  width: 400px;
+  background: transparent;
+  left: 3rem;
+  top: 75%;
+}
+a {
+  text-decoration: none;
+  color: #b506dc;
+}
+.nav1 {
+  height: 4rem;
+  background: linear-gradient(90deg, white, #3333ff, blue);
+}
+.age1 {
+  position: absolute;
+  right: 37%;
+  top: 15%;
+}
+.age2 {
+  position: absolute;
+  right: 45%;
+  top: 40%;
+}
+.age3 {
+  position: absolute;
+  top: 70%;
+  left: 0%;
+}
+
+.para {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  color: white;
+  font-weight: 700;
+  font-size: 70px;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+@keyframes writeAnim {
+  0% {
+    content: "sdhasbdhb";
+  }
+  33% {
+    content: "Enter";
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+  }
+  66% {
+    content: "Enter Your ";
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+  }
+  100% {
+    content: "Enter Your Age..";
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+  }
+}
+.animst {
+  animation: writeAnim 2s linear 0.5s;
+}

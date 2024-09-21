@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIDS-HUB</title>
+    <link rel="stylesheet" href="ageselecter.css" />
+  </head>
+  <body>
+    <!-- <nav class="navbar sticky-top bg-body-tertiary nav1">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
+      </div>
+    </nav> -->
+    <main>
+      <div class="title">
+        <h1>KIDS-HUB !</h1>
+        <p>Learn Today,Lead Tommorow</p>
+        <img class="hii" src="./media/cartoon.png" alt="hi" />
+      </div>
+      <!-- <div class="gif"></div> -->
+
+      <div class="bg_shape">
+        <div class="selecter_age">
+          <a href="checkanimatlvoice.html" class="age1"
+            ><div class="age baby"><h3>0-4</h3></div></a
+          >
+          <a href="boatGame.html" class="age2"
+            ><div class="age middel"><h3>4-8</h3></div></a
+          >
+          <a href="object_speller.html" class="age3"
+            ><div class="age young"><h3>8-12</h3></div></a
+          >
+          <div class="para"></div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const text = "What is your age?"; // Text to be typed
+          const typingText = document.querySelector(".para");
+          let index = 0;
+          typingText.classList.add("para");
+          function type() {
+            if (index < text.length) {
+              typingText.innerHTML += text.charAt(index);
+              index++;
+              setTimeout(type, 100); // Typing speed (adjust as needed)
+            }
+          }
+
+          type(); // Start typing animation
+        });
+      </script>
+    </main>
+  </body>
+</html>
